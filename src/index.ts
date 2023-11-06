@@ -6,7 +6,6 @@ import './infrastructure/controllers';
 
 // load everything needed to the Container
 let container = new Container();
-import { controller, httpGet } from 'inversify-express-utils';
 
 // start the server
 let server = new InversifyExpressServer(container);
