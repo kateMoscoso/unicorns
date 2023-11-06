@@ -2,11 +2,11 @@ import 'reflect-metadata';
 import { InversifyExpressServer } from 'inversify-express-utils';
 import { Container } from 'inversify';
 import * as bodyParser from 'body-parser';
-import './controller/home';
-import './controller/user';
+import './infrastructure/controllers';
 
 // load everything needed to the Container
 let container = new Container();
+import { controller, httpGet } from 'inversify-express-utils';
 
 // start the server
 let server = new InversifyExpressServer(container);
