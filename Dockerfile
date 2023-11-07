@@ -1,5 +1,5 @@
 FROM alpine:3.8
-FROM node:10-alpine
+FROM node:14-alpine
 
 
 COPY ["package.json","package-lock.json", "/usr/src/"]
@@ -12,4 +12,4 @@ COPY [".", "/usr/src/"]
 
 EXPOSE 3000
 
-CMD ["node", "index.ts"]
+CMD ["node", "./dist/index.js"]
