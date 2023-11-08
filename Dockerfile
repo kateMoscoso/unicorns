@@ -1,6 +1,4 @@
-FROM alpine:3.8
-FROM node:14-alpine
-
+FROM node:latest
 
 COPY ["package.json","package-lock.json", "/usr/src/"]
 
