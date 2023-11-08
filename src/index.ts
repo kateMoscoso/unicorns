@@ -3,6 +3,7 @@ import { InversifyExpressServer } from 'inversify-express-utils';
 import { Container } from 'inversify';
 import * as bodyParser from 'body-parser';
 import './infrastructure/controllers/index';
+import './infrastructure/controllers/car-controller';
 import { dummyLogger, Logger } from "ts-log";
 
 
